@@ -46,7 +46,19 @@ Event loop es la manera como javascript maneja el asincronismo. Sabemos que JS s
 
 callbacks, promesas y async await son la manera que podemos manejar ese asincronismo desde el código, ahora con ecmascript tenemos async await que vino a solucionar sobre todo el callback hell y el promise hell, haciendo que nuestro código sea más limpio pero con el mismo objetivo
 
-● If you are getting too many API calls being made from your hooks, what
-can you do to prevent this?
-● How do you manage the global state? And why in that way?
-● What is progressive rendering?
+### If you are getting too many API calls being made from your hooks, what can you do to prevent this?
+
+Tendrías varias soluciones según el caso:
+
+Por un lado podría usar por ejemplo react-query, que me ayudaría a cachear un poco la data y evitar llamadas innecesarias a los servicios que llama axios. También podría memorizar funciones con useCallBack o algunos procesos con useMemo y así evitar rerenders
+
+
+### How do you manage the global state? And why in that way?
+
+He trabajado con react-redux, aprendí react en el 2017 en el primer diplomado de platzi presencial en bogotá y lo aprendí con redux, además con componentes de clase. Es decir, me tocó pedalear con implementaciones de redux aburridoras. También trabajo con context y en algún momento trabajé con redux saga y funciones generadoras.
+
+Por qué la una o la otra, yo pienso que depende mucho de la robustes del estado que quieras manejar. Si es pequeña y quieres solo pensar en dejar de pasar props en el arbol de componentes pues que sea context, pero si es un estado más grande y que quieres mantener a nivel general en los componentes mejor que sea redux, además que ya es fácil de implementar jaja.
+
+### What is progressive rendering?
+
+Es cuando queremos ir renderizando la app en sus diferentes "secciones" sin necesidad de esperar que se cargue completamente
