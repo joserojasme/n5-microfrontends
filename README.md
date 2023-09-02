@@ -18,14 +18,14 @@ video funcionalidad disponible en: https://youtu.be/RbWm2cMb99g
 
 ## Built With
 
-- [ReactJS](https://es.reactjs.org/) - La librearía JS Utilizada
+- [ReactJS](https://es.reactjs.org/) 
 - [Single-spa](https://single-spa.js.org/docs/ecosystem-react/)
 - [Styled-components](https://styled-components.com/)
 - [Axios](https://axios-http.com/docs/intro) 
-- [Npm](www.npmjs.com) Gestión de dependencias
-- [ESlint](https://eslint.org/) y prettier Análisis y estructura de código
-- [Npm](www.npmjs.com) Gestión de dependencias
-- [WebPack](https://webpack.js.org/) Empaquetador de módulos
+- [Npm](www.npmjs.com) 
+- [ESlint](https://eslint.org/) 
+- [Npm](www.npmjs.com) 
+- [WebPack](https://webpack.js.org/) 
 
 ## Preguntas
 
